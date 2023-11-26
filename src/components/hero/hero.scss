@@ -6,7 +6,7 @@
   background: linear-gradient(180deg, #0c0c1d, #111132);
   position: relative;
   // background-color: white/;
-
+ 
   .wrapper {
     max-width: 1366px;
     height: 100%;
@@ -32,6 +32,9 @@
         font-size: 30px;
         color: rebeccapurple;
         letter-spacing: 10px;
+        @include mobile{
+          text-align: center;
+        }
       }
 
       h1 {
@@ -90,8 +93,4 @@
     width: 50%;
     font-weight: bold;
   }
-}
-
-@media (max-width: 538px) {
-  
 }

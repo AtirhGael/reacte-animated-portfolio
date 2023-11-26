@@ -26,7 +26,7 @@ const itemVariants = {
   },
 };
 
-export default function Links() {
+export default function Links({setopen}) {
 
     const items =[
         'HomePage',
@@ -36,9 +36,9 @@ export default function Links() {
         'About',
     ]
   return (
-    <motion.div className='links' variants={variants}>
+    <motion.div className='links' variants={variants} >
       {items.map(items=>(
-        <motion.a href={`#${items}`} key={items} variants={itemVariants} whileHover={{scale:1.1}} whileTap={{scale:0.96}}>{items}</motion.a>
+        <motion.a onClick={()=>setopen((prev)=>!prev)} href={`#${items}`} key={items} variants={itemVariants} whileHover={{scale:1.1}} whileTap={{scale:0.96}}>{items}</motion.a>
       ))}
     </motion.div>
   )

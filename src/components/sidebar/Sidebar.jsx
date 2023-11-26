@@ -29,7 +29,7 @@ function Sidebar() {
   return (
     <motion.div className='sidebar' animate={open?'open':'closed'}>
       <motion.div className='bg' variants={variants}>
-        <Links/>
+        <Links setopen={setopen}/>
       </motion.div>
       <ToggleButton setopen={setopen}/>
     </motion.div>

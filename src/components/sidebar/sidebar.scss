@@ -30,7 +30,10 @@
             align-items: center;
             justify-content: center;
             gap: 20px;
-
+            @include mobile{
+                justify-content: flex-start;
+                padding-top: 120px;
+            }
            a{
             font-size: 30px;
             color: black;
