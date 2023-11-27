@@ -5,6 +5,7 @@ import Navbar from './components/navbar/Navbar'
 import Parallex from './components/parallex/Parallex'
 import Portfolio from './components/portfolio/Portfolio'
 import Services from './components/services/Services'
+import Skill from './components/skills/Skils'
 
 
 function App() {
@@ -21,7 +22,9 @@ function App() {
       <Portfolio/>
 
       <section id='Contact'><Contact/></section>
-      <section id='About'>About</section>
+      <section id='About'>
+      ABOUT
+      </section>
      
     </>
   )

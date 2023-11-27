@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import "./services.scss";
 import { motion, useInView } from "framer-motion";
+import ProgressBar from "@ramonak/react-progress-bar";
 
 const variants = {
   initial: {
@@ -60,12 +61,35 @@ export default function Services() {
         className="box"
         whileHover={{ background: "lightgray", color: "black" }}
       >
-        <h2>Branding</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-          libero enim nisi aliquam consectetur expedita magni eius ex corrupti
-          animi! Ad nam pariatur assumenda quae mollitia libero repellat
-          explicabo maiores?
+        <h2>FrontEnd</h2>
+        <p >
+        <div >React Js</div>
+            <ProgressBar 
+          completed={90} 
+          bgColor="orange"
+          labelColor="#000"
+          animateOnRender={false}
+          transitionDuration='2s'
+          // completedClassName="barCompleted"
+          />
+          <div style={{paddingTop:15}}>React Native</div>
+          <ProgressBar 
+          completed={90} 
+          bgColor="orange"
+          labelColor="#000"
+          animateOnRender={false}
+          transitionDuration='2s'
+          // completedClassName="barCompleted"
+          />
+         <div style={{paddingTop:15}}>TypeScript</div>
+            <ProgressBar 
+          completed={60} 
+          bgColor="orange"
+          labelColor="#000"
+          animateOnRender={false}
+          transitionDuration='2s'
+          // completedClassName="barCompleted"
+          />
         </p>
         <button>Go</button>
       </motion.div>
@@ -73,12 +97,35 @@ export default function Services() {
         className="box"
         whileHover={{ background: "lightgray", color: "black" }}
       >
-        <h2>Branding</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-          libero enim nisi aliquam consectetur expedita magni eius ex corrupti
-          animi! Ad nam pariatur assumenda quae mollitia libero repellat
-          explicabo maiores?
+        <h2>Back End </h2>
+        <p >
+        <div >Node Js</div>
+            <ProgressBar 
+          completed={90} 
+          bgColor="orange"
+          labelColor="#000"
+          animateOnRender={false}
+          transitionDuration='2s'
+          // completedClassName="barCompleted"
+          />
+          <div style={{paddingTop:15}}>Express Js</div>
+          <ProgressBar 
+          completed={90} 
+          bgColor="orange"
+          labelColor="#000"
+          animateOnRender={false}
+          transitionDuration='2s'
+          // completedClassName="barCompleted"
+          />
+         <div style={{paddingTop:15}}>Python (Django)</div>
+            <ProgressBar 
+          completed={60} 
+          bgColor="orange"
+          labelColor="#000"
+          animateOnRender={false}
+          transitionDuration='2s'
+          // completedClassName="barCompleted"
+          />
         </p>
         <button>Go</button>
       </motion.div>
@@ -86,12 +133,27 @@ export default function Services() {
         className="box"
         whileHover={{ background: "lightgray", color: "black" }}
       >
-        <h2>Branding</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-          libero enim nisi aliquam consectetur expedita magni eius ex corrupti
-          animi! Ad nam pariatur assumenda quae mollitia libero repellat
-          explicabo maiores?
+        <h2>DataBase</h2>
+        <p >
+        <div >Mongo DB</div>
+            <ProgressBar 
+          completed={90} 
+          bgColor="orange"
+          labelColor="#000"
+          animateOnRender={false}
+          transitionDuration='2s'
+          // completedClassName="barCompleted"
+          />
+          <div style={{paddingTop:15}}>PostgreSQL</div>
+          <ProgressBar 
+          completed={90} 
+          bgColor="orange"
+          labelColor="#000"
+          animateOnRender={false}
+          transitionDuration='2s'
+          // completedClassName="barCompleted"
+          />
+      
         </p>
         <button>Go</button>
       </motion.div>
@@ -99,12 +161,18 @@ export default function Services() {
         className="box"
         whileHover={{ background: "lightgray", color: "black" }}
       >
-        <h2>Branding</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-          libero enim nisi aliquam consectetur expedita magni eius ex corrupti
-          animi! Ad nam pariatur assumenda quae mollitia libero repellat
-          explicabo maiores?
+        <h2>DevOPs</h2>
+        <p >
+        <div >CD/CI(GitHub)</div>
+            <ProgressBar 
+          completed={90} 
+          bgColor="orange"
+          labelColor="#000"
+          animateOnRender={false}
+          transitionDuration='2s'
+          // completedClassName="barCompleted"
+          />
+        
         </p>
         <button>Go</button>
       </motion.div>

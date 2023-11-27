@@ -49,7 +49,7 @@ export default function Hero() {
         >
           <motion.h2 variants={textVariants}>Atirh Gael</motion.h2>
           <motion.h1 variants={textVariants}>
-            Full Stack web and mobile developer
+           Full Stack web and mobile developer
           </motion.h1>
           <motion.div variants={textVariants} className="buttons">
             <motion.button variants={textVariants}>
